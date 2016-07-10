@@ -30624,6 +30624,11 @@ return PickerConstructor
 },{"jquery":2}],6:[function(require,module,exports){
 (function () {
   require('../../node_modules/materialize-css/dist/js/materialize.js')
+
+  document.querySelector('.sharing-block_favorite-btn')
+    .addEventListener('click', function () {
+      this.classList.toggle('favorited')
+    })
 })()
 
 },{"../../node_modules/materialize-css/dist/js/materialize.js":3}]},{},[6]);
