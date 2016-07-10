@@ -7407,8 +7407,6 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 5px solid transparent;
-  border-top: 5px solid transparent;
   color: #607d8b;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7421,12 +7419,14 @@ body {
   margin-left: 15px;
   margin-right: 15px;
   text-transform: uppercase; }
-  .page-nav_link:hover {
-    border-bottom: 5px solid #f35388;
+  .page-nav_link.hover {
     color: #f35388; }
-  .page-nav_link.selected {
-    border-bottom: 5px solid #f35388;
-    color: #f35388; }
+
+.page-nav_selected-link-underline {
+  background: #f35388;
+  height: 5px;
+  position: absolute;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1); }
 
 .page-header_auth {
   display: -webkit-flex;
@@ -7738,6 +7738,7 @@ p.highlighted-accent {
     height: 100%; }
 
 .map {
+  border-radius: 3px;
   margin-bottom: -15px;
   margin-top: 15px;
   width: 100%; }
